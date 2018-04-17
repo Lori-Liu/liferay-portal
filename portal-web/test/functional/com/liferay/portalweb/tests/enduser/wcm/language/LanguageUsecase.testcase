@@ -249,6 +249,7 @@
 	</command>
 
 	<command name="MoveCurrentLanguagesToAvailable" priority="4">
+		<property name="portal.acceptance" value="Lori" />
 		<property name="test.name.skip.portal.instance" value="LanguageUsecase#MoveCurrentLanguagesToAvailable" />
 		<property name="testray.component.names" value="Localization" />
 
@@ -282,7 +283,7 @@
 		</execute>
 
 		<execute macro="LanguagePortlet#viewLanguageCurrent">
-			<var name="locale" value="en-us" />
+			<var name="portletName" value="en-us" />
 		</execute>
 
 		<execute macro="LanguagePortlet#viewLanguagesAbsent">
@@ -326,6 +327,7 @@
 	</command>
 
 	<command name="ViewDisplayOptionsViaLanguagePortlet" priority="4">
+		<property name="portal.acceptance" value="Lori" />
 		<property name="test.name.skip.portal.instance" value="LanguageUsecase#ViewDisplayOptionsViaLanguagePortlet" />
 		<property name="testray.component.names" value="Localization" />
 
@@ -357,7 +359,7 @@
 		</execute>
 
 		<execute macro="LanguagePortlet#viewLanguageCurrent">
-			<var name="locale" value="nl-nl" />
+			<var name="portletName" value="nl-nl" />
 		</execute>
 
 		<execute macro="Navigator#gotoSitePage">
@@ -418,6 +420,7 @@
 	</command>
 
 	<command name="ViewRemovedCurrentPortalLanguagesViaLanguagePortlet" priority="4">
+		<property name="portal.acceptance" value="Lori" />
 		<property name="test.name.skip.portal.instance" value="LanguageUsecase#ViewRemovedCurrentPortalLanguagesViaLanguagePortlet" />
 		<property name="testray.component.names" value="Localization" />
 
@@ -446,7 +449,7 @@
 		</execute>
 
 		<execute macro="LanguagePortlet#viewLanguageCurrent">
-			<var name="locale" value="en-us" />
+			<var name="portletName" value="en-us" />
 		</execute>
 
 		<execute macro="LanguagePortlet#viewLanguagesAbsent">
@@ -467,6 +470,7 @@
 	</command>
 
 	<command name="ViewRemovedCurrentSiteLanguagesViaLanguagePortlet" priority="4">
+		<property name="portal.acceptance" value="Lori" />
 		<property name="test.name.skip.portal.instance" value="LanguageUsecase#ViewRemovedCurrentSiteLanguageViaLanguagePortlet" />
 		<property name="testray.component.names" value="Localization" />
 
@@ -501,7 +505,7 @@
 		</execute>
 
 		<execute macro="LanguagePortlet#viewLanguageCurrent">
-			<var name="locale" value="en-us" />
+			<var name="portletName" value="en-us" />
 		</execute>
 
 		<execute macro="LanguagePortlet#viewLanguagesAbsent">
