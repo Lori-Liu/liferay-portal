@@ -357,7 +357,7 @@
 		</execute>
 
 		<execute macro="LanguagePortlet#viewLanguageCurrent">
-			<var name="locale" value="nl-nl" />
+			<var name="portletName" value="nl-nl" />
 		</execute>
 
 		<execute macro="Navigator#gotoSitePage">
