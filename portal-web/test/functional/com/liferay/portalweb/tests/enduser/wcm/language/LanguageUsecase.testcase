@@ -446,7 +446,7 @@
 		</execute>
 
 		<execute macro="LanguagePortlet#viewLanguageCurrent">
-			<var name="locale" value="en-us" />
+			<var name="portletName" value="en-us" />
 		</execute>
 
 		<execute macro="LanguagePortlet#viewLanguagesAbsent">
