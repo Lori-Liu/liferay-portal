@@ -26,7 +26,6 @@ import com.liferay.journal.configuration.JournalServiceConfiguration;
 import com.liferay.journal.constants.JournalPortletKeys;
 import com.liferay.journal.model.JournalArticle;
 import com.liferay.journal.web.configuration.JournalWebConfiguration;
-import com.liferay.petra.string.StringPool;
 import com.liferay.portal.configuration.metatype.bnd.util.ConfigurableUtil;
 import com.liferay.portal.kernel.language.LanguageUtil;
 import com.liferay.portal.kernel.log.Log;
@@ -43,7 +42,6 @@ import com.liferay.portal.kernel.service.PortletLocalService;
 import com.liferay.portal.kernel.template.TemplateConstants;
 import com.liferay.portal.kernel.theme.PortletDisplay;
 import com.liferay.portal.kernel.theme.ThemeDisplay;
-import com.liferay.portal.kernel.util.ParamUtil;
 import com.liferay.portal.kernel.util.Portal;
 import com.liferay.portal.kernel.util.SetUtil;
 import com.liferay.portal.kernel.util.WebKeys;
@@ -69,7 +67,7 @@ import org.osgi.service.component.annotations.Reference;
  */
 @Component(
 	configurationPid = "com.liferay.journal.web.configuration.JournalWebConfiguration",
-	property = {"javax.portlet.name=" + JournalPortletKeys.JOURNAL},
+	property = "javax.portlet.name=" + JournalPortletKeys.JOURNAL,
 	service = DDMDisplay.class
 )
 public class JournalDDMDisplay extends BaseDDMDisplay {
@@ -114,40 +112,6 @@ public class JournalDDMDisplay extends BaseDDMDisplay {
 		portletURL.setParameter("ddmStructureKey", structure.getStructureKey());
 
 		return portletURL.toString();
-	}
-
-	@Override
-	public String getEditTemplateBackURL(
-			LiferayPortletRequest liferayPortletRequest,
-			LiferayPortletResponse liferayPortletResponse, long classNameId,
-			long classPK, long resourceClassNameId, String portletResource)
-		throws Exception {
-
-		DDMNavigationHelper ddmNavigationHelper = getDDMNavigationHelper();
-
-		if (ddmNavigationHelper.isNavigationStartsOnEditTemplate(
-				liferayPortletRequest)) {
-
-			return StringPool.BLANK;
-		}
-
-		if (ddmNavigationHelper.isNavigationStartsOnSelectTemplate(
-				liferayPortletRequest)) {
-
-			return ParamUtil.getString(liferayPortletRequest, "redirect");
-		}
-
-		if (ddmNavigationHelper.isNavigationStartsOnViewTemplates(
-				liferayPortletRequest)) {
-
-			return getViewTemplatesURL(
-				liferayPortletRequest, liferayPortletResponse, classNameId, 0,
-				resourceClassNameId);
-		}
-
-		return getViewTemplatesURL(
-			liferayPortletRequest, liferayPortletResponse, classNameId, classPK,
-			resourceClassNameId);
 	}
 
 	@Override
@@ -214,37 +178,8 @@ public class JournalDDMDisplay extends BaseDDMDisplay {
 	}
 
 	@Override
-	public String getViewTemplatesBackURL(
-			LiferayPortletRequest liferayPortletRequest,
-			LiferayPortletResponse liferayPortletResponse, long classPK)
-		throws Exception {
-
-		DDMNavigationHelper ddmNavigationHelper = getDDMNavigationHelper();
-
-		if (ddmNavigationHelper.isNavigationStartsOnEditStructure(
-				liferayPortletRequest)) {
-
-			return StringPool.BLANK;
-		}
-
-		if (ddmNavigationHelper.isNavigationStartsOnViewTemplates(
-				liferayPortletRequest)) {
-
-			return ParamUtil.getString(liferayPortletRequest, "backURL");
-		}
-
-		return super.getViewTemplatesBackURL(
-			liferayPortletRequest, liferayPortletResponse, classPK);
-	}
-
-	@Override
 	public Set<String> getViewTemplatesExcludedColumnNames() {
 		return _viewTemplateExcludedColumnNames;
-	}
-
-	@Override
-	public boolean isShowBackURLInTitleBar() {
-		return true;
 	}
 
 	@Override
@@ -445,7 +380,7 @@ public class JournalDDMDisplay extends BaseDDMDisplay {
 						showAncestorScopesByDefault()));
 				portletURL.setParameter(
 					"showCacheableInput", Boolean.TRUE.toString());
-				portletURL.setParameter("showHeader", Boolean.TRUE.toString());
+				portletURL.setParameter("showHeader", Boolean.FALSE.toString());
 
 				return portletURL.toString();
 			}
