@@ -126,7 +126,7 @@
 
 	<command name="viewLanguageCurrent">
 		<execute function="AssertElementPresent" locator1="Language#DROPDOWN_LANGUAGE">
-			<var name="key_locale" value="${locale}" />
+			<var name="key_portletName" value="${portletName}" />
 		</execute>
 	</command>
 
