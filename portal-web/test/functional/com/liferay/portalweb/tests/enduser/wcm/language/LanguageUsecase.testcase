@@ -348,7 +348,7 @@
 		</execute>
 
 		<execute macro="LanguagePortlet#toggleDisplayTemplate">
-			<var name="displayStyle" value="Icon Menu" />
+			<var name="displayStyle" value="portlet-display-template-name-icon-menu" />
 		</execute>
 
 		<execute macro="Navigator#gotoSitePage">
@@ -370,7 +370,7 @@
 		</execute>
 
 		<execute macro="LanguagePortlet#toggleDisplayTemplate">
-			<var name="displayStyle" value="Long Text" />
+			<var name="displayStyle" value="portlet-display-template-name-long-text" />
 		</execute>
 
 		<execute macro="Navigator#gotoSitePage">
@@ -387,7 +387,7 @@
 		</execute>
 
 		<execute macro="LanguagePortlet#toggleDisplayTemplate">
-			<var name="displayStyle" value="Select Box" />
+			<var name="displayStyle" value="portlet-display-template-name-select-box" />
 		</execute>
 
 		<execute macro="Navigator#gotoSitePage">
@@ -404,7 +404,7 @@
 		</execute>
 
 		<execute macro="LanguagePortlet#toggleDisplayTemplate">
-			<var name="displayStyle" value="Short Text" />
+			<var name="displayStyle" value="portlet-display-template-name-short-text" />
 		</execute>
 
 		<execute macro="Navigator#gotoSitePage">
