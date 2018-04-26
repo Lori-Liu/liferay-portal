@@ -125,12 +125,32 @@
 	</command>
 
 	<command name="viewLanguageCurrent">
-		<execute function="AssertElementPresent" locator1="Language#DROPDOWN_LANGUAGE">
+		<if>
+			<contains string="${portletName}" substring="{portletName}" />
+			<then>
+				<var name="key_portletName" value="LanguagePortlet" />
+			</then>
+			<else>
+				<var name="key_portletName" value="${portletName}" />
+			</else>
+		</if>
+		
+		<execute function="AssertElementPresent" locator1="Language#DROPDOWN_LANGUAGE_LOCALE">
 			<var name="key_locale" value="${locale}" />
 		</execute>
 	</command>
 
 	<command name="viewLanguagesAbsent">
+		<if>
+			<contains string="${portletName}" substring="{portletName}" />
+			<then>
+				<var name="key_portletName" value="LanguagePortlet" />
+			</then>
+			<else>
+				<var name="key_portletName" value="${portletName}" />
+			</else>
+		</if>
+
 		<execute function="Click" locator1="Language#DROPDOWN" />
 
 		<for list="${missingLocales}" param="missingLocale">
@@ -143,6 +163,16 @@
 	</command>
 
 	<command name="viewLanguagesPresent">
+		<if>
+			<contains string="${portletName}" substring="{portletName}" />
+			<then>
+				<var name="key_portletName" value="LanguagePortlet" />
+			</then>
+			<else>
+				<var name="key_portletName" value="${portletName}" />
+			</else>
+		</if>
+
 		<execute function="Click" locator1="Language#DROPDOWN" />
 
 		<for list="${currentLocales}" param="currentLocale">
