@@ -125,30 +125,61 @@
 	</command>
 
 	<command name="viewLanguageCurrent">
-		<execute function="AssertElementPresent" locator1="Language#DROPDOWN_LANGUAGE">
-			<var name="key_locale" value="${locale}" />
+		<if>
+			<contains string="${portletName}" substring="{portletName}" />
+			<then>
+				<var name="key_portletName" value="LanguagePortlet" />
+			</then>
+			<else>
+				<var name="key_portletName" value="${portletName}" />
+			</else>
+		</if>
+
+		<var name="key_locale" value="${locale}" />
+		
+		<execute function="AssertElementPresent" locator1="Language#DROPDOWN_LANGUAGE_LOCALE" />
 		</execute>
 	</command>
 
 	<command name="viewLanguagesAbsent">
+		<if>
+			<contains string="${portletName}" substring="{portletName}" />
+			<then>
+				<var name="key_portletName" value="LanguagePortlet" />
+			</then>
+			<else>
+				<var name="key_portletName" value="${portletName}" />
+			</else>
+		</if>
+
 		<execute function="Click" locator1="Language#DROPDOWN" />
 
+		<var name="key_locale" value="${missingLocale}" />
+
 		<for list="${missingLocales}" param="missingLocale">
-			<execute function="AssertElementNotPresent" locator1="Language#LANGUAGE">
-				<var name="key_locale" value="${missingLocale}" />
-			</execute>
+			<execute function="AssertElementNotPresent" locator1="Language#LANGUAGE" />
 		</for>
 
 		<execute function="Click" locator1="Language#DROPDOWN" />
 	</command>
 
 	<command name="viewLanguagesPresent">
+		<if>
+			<contains string="${portletName}" substring="{portletName}" />
+			<then>
+				<var name="key_portletName" value="LanguagePortlet" />
+			</then>
+			<else>
+				<var name="key_portletName" value="${portletName}" />
+			</else>
+		</if>
+
 		<execute function="Click" locator1="Language#DROPDOWN" />
 
+		<var name="key_locale" value="${currentLocale}" />
+
 		<for list="${currentLocales}" param="currentLocale">
-			<execute function="AssertElementPresent" locator1="Language#LANGUAGE">
-				<var name="key_locale" value="${currentLocale}" />
-			</execute>
+			<execute function="AssertElementPresent" locator1="Language#LANGUAGE" />
 		</for>
 
 		<execute function="Click" locator1="Language#DROPDOWN" />
