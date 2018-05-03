@@ -818,6 +818,7 @@
 
 	<command name="AssetPublisherFilterAndOrderByFieldType" priority="5">
 		<property name="testray.component.names" value="Training" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Navigator#openURL" />
 
