@@ -1952,6 +1952,8 @@
 	</command>
 
 	<command name="PGBlogs#ViewBlogsEntryWithDefaultScope" priority="3">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Navigator#gotoPage">
 			<var name="pageName" value="Blogs Page" />
 		</execute>
