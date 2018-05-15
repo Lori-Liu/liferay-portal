@@ -250,6 +250,8 @@
 	</command>
 
 	<command name="ApproveResubmitTaskByActions" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Navigator#openURL" />
 
 		<execute macro="ProductMenu#gotoPortlet">
