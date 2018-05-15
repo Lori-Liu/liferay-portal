@@ -710,6 +710,8 @@
 	</command>
 
 	<command name="SearchBlogsEntryContent" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Navigator#openURL" />
 
 		<execute macro="ProductMenu#gotoPortlet">
@@ -767,6 +769,8 @@
 	</command>
 
 	<command name="SearchBlogsEntryTitle" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Navigator#openURL" />
 
 		<execute macro="ProductMenu#gotoPortlet">
@@ -904,6 +908,8 @@
 	</command>
 
 	<command name="ViewBlogsEntryDraftWithCoverImage" priority="3">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Navigator#openURL" />
 
 		<execute macro="ProductMenu#gotoPortlet">

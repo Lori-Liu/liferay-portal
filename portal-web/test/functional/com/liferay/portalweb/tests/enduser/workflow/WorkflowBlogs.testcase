@@ -47,6 +47,8 @@
 	</tear-down>
 
 	<command name="ApproveBlogsEntryCP" priority="5">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Navigator#openURL" />
 
 		<execute macro="ProductMenu#gotoPortlet">
@@ -159,6 +161,8 @@
 	</command>
 
 	<command name="RejectBlogsEntryCP" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Navigator#openURL" />
 
 		<execute macro="ProductMenu#gotoPortlet">
