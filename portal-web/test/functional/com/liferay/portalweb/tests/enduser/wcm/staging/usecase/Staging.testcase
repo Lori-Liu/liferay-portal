@@ -1575,6 +1575,7 @@
 
 		<property name="custom.properties" value="tunneling.servlet.shared.secret=1234567890123456${line.separator}auth.verifier.TunnelAuthVerifier.hosts.allowed=" />
 		<property name="test.name.skip.portal.instance" value="Staging#StagingRemoteLiveBlogsWithWorkflow" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Staging#remoteStagingSetUp">
 			<var name="siteName" value="Site Name" />
