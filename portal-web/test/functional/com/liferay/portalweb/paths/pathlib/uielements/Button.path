@@ -104,6 +104,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>ADD_RULE</td>
+	<td>//button[contains(@data-onclick,'addRule')]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>ADD_SUBFOLDER</td>
 	<td>//a[contains(.,'Add Subfolder')]</td>
 	<td></td>
