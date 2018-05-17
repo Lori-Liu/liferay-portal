@@ -30,6 +30,7 @@
 	<command name="ViewWorkflowArchive612" priority="5">
 		<property name="data.archive.type" value="data-archive-workflow" />
 		<property name="portal.version" value="6.1.2" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Upgrade#approveWorkflow" />
 	</command>
@@ -37,6 +38,7 @@
 	<command name="ViewWorkflowArchive6130" priority="5">
 		<property name="data.archive.type" value="data-archive-workflow" />
 		<property name="portal.version" value="6.1.30" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Upgrade#approveWorkflow" />
 	</command>
@@ -44,6 +46,7 @@
 	<command name="ViewWorkflowArchive621015" priority="5">
 		<property name="data.archive.type" value="data-archive-workflow" />
 		<property name="portal.version" value="6.2.10.15" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Upgrade#approveWorkflow" />
 
@@ -53,6 +56,7 @@
 	<command name="ViewWorkflowArchive623" priority="5">
 		<property name="data.archive.type" value="data-archive-workflow" />
 		<property name="portal.version" value="6.2.3" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Upgrade#approveWorkflow" />
 	</command>
@@ -60,6 +64,7 @@
 	<command name="ViewWorkflowArchive625" priority="5">
 		<property name="data.archive.type" value="data-archive-workflow" />
 		<property name="portal.version" value="6.2.5" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Upgrade#approveWorkflow" />
 	</command>
