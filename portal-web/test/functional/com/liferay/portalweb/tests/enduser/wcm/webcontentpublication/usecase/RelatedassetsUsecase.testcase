@@ -21,6 +21,8 @@
 	</tear-down>
 
 	<command name="AssertRelatedAssetsDisplayWithCategory" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<property name="testray.component.names" value="Categories,Staging,Related Assets,Web Content Administration" />
 
 		<execute macro="ProductMenu#gotoPortlet">
