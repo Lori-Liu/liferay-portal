@@ -40,6 +40,7 @@
 	<command name="ViewBlogsEntryRegRoleInline" priority="5">
 		<property name="portal.acceptance" value="quarantine" />
 		<property name="test.name.skip.portal.instance" value="CPRolesCPBlogs#ViewBlogsEntryRegRoleInline" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Permissions#setUpRegRoleLoginUserCP">
 			<var name="portletName" value="Blogs" />

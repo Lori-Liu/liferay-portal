@@ -1791,6 +1791,8 @@
 	</command>
 
 	<command name="ViewBlogsEntryOnMultiplePagesWithDefaultAndPageScope" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="TestCase#getSiteName">
 			<return from="siteName" name="siteName" />
 			<var name="siteName" value="${siteName}" />
@@ -1945,6 +1947,8 @@
 	</command>
 
 	<command name="ViewBlogsEntryWithCoverImageFromDMFolders" priority="3">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="ProductMenu#gotoPortlet">
 			<var name="category" value="Build" />
 			<var name="panel" value="Site Administration" />
