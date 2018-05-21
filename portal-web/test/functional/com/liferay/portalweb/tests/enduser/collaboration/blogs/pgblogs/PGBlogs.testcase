@@ -1952,6 +1952,8 @@
 	</command>
 
 	<command name="ViewBlogsEntryWithDefaultScope" priority="3">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Navigator#gotoPage">
 			<var name="pageName" value="Blogs Page" />
 		</execute>
@@ -2026,8 +2028,8 @@
 			<var name="scopeSelection" value="Blogs Page" />
 		</execute>
 
-		<execute macro="Portlet#changeDisplayStyle">
-			<var name="displayStyle" value="list" />
+		<execute macro="LexiconEntry#changeDisplayStyle">
+			<var name="displayStyle" value="table" />
 		</execute>
 
 		<execute macro="BlogsEntry#viewEntryTable">

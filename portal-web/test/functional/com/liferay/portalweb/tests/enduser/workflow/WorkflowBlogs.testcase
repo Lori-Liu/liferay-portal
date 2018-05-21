@@ -47,6 +47,8 @@
 	</tear-down>
 
 	<command name="ApproveBlogsEntryCP" priority="5">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Navigator#openURL" />
 
 		<execute macro="ProductMenu#gotoPortlet">
@@ -127,8 +129,8 @@
 			<var name="entryTitle" value="Blogs Entry Title" />
 		</execute>
 
-		<execute macro="Portlet#changeDisplayStyle">
-			<var name="displayStyle" value="Icon" />
+		<execute macro="LexiconEntry#changeDisplayStyle">
+			<var name="displayStyle" value="Cards" />
 		</execute>
 
 		<execute macro="BlogsNavigator#gotoEntryCP">
@@ -159,6 +161,8 @@
 	</command>
 
 	<command name="RejectBlogsEntryCP" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Navigator#openURL" />
 
 		<execute macro="ProductMenu#gotoPortlet">

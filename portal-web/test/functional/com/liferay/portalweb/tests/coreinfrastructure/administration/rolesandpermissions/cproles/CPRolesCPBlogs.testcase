@@ -40,6 +40,7 @@
 	<command name="ViewBlogsEntryRegRoleInline" priority="5">
 		<property name="portal.acceptance" value="quarantine" />
 		<property name="test.name.skip.portal.instance" value="CPRolesCPBlogs#ViewBlogsEntryRegRoleInline" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Permissions#setUpRegRoleLoginUserCP">
 			<var name="portletName" value="Blogs" />
@@ -151,8 +152,8 @@
 			<var name="portlet" value="Blogs" />
 		</execute>
 
-		<execute macro="Portlet#changeDisplayStyle">
-			<var name="displayStyle" value="list" />
+		<execute macro="LexiconEntry#changeDisplayStyle">
+			<var name="displayStyle" value="table" />
 		</execute>
 
 		<execute macro="BlogsEntry#viewEntryTable">
