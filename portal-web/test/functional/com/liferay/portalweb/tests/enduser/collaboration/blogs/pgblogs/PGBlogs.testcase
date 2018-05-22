@@ -600,6 +600,8 @@
 	</command>
 
 	<command name="AddPortletToOrganizationSitePublicPage" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="ProductMenu#gotoPortlet">
 			<var name="category" value="Users" />
 			<var name="panel" value="Control Panel" />
@@ -1843,6 +1845,8 @@
 	</command>
 
 	<command name="ViewBlogsEntryRSS" priority="4">
+		<property name="portal.acceptance" value="lori" />
+		
 		<execute macro="TestCase#getSiteName">
 			<return from="siteName" name="siteName" />
 			<var name="siteName" value="${siteName}" />
