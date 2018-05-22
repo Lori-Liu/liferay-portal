@@ -1631,6 +1631,7 @@
 
 	<command name="SubscribeBlogsRegRole" priority="5">
 		<property name="portal.acceptance" value="false" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Permissions#setUpRegRoleLoginUserPG">
 			<var name="pageName" value="Blogs Page" />
@@ -1691,6 +1692,8 @@
 	</command>
 
 	<command name="SubscribeBlogsRegRoleInline" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Permissions#setUpRegRoleLoginUserPG">
 			<var name="pageName" value="Blogs Page" />
 			<var name="portletName" value="Blogs" />
@@ -1943,6 +1946,7 @@
 
 	<command name="ViewBlogsPermissionsRegRole" priority="5">
 		<property name="portal.acceptance" value="false" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Permissions#setUpRegRoleLoginUserPG">
 			<var name="pageName" value="Blogs Page" />
@@ -2015,6 +2019,8 @@
 	</command>
 
 	<command name="ViewBlogsPermissionsRegRoleInline" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Permissions#setUpRegRoleLoginUserPG">
 			<var name="pageName" value="Blogs Page" />
 			<var name="portletName" value="Blogs" />
@@ -2140,6 +2146,8 @@
 	</command>
 
 	<command name="ViewBlogsPermissionsSiteRole" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Permissions#setUpSiteRoleLoginUserPG">
 			<var name="page" value="Public Pages" />
 			<var name="pageName" value="Blogs Page" />
@@ -2234,6 +2242,8 @@
 	</command>
 
 	<command name="ViewBlogsPermissionsSiteRoleInline" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="Permissions#setUpSiteRoleLoginUserPG">
 			<var name="page" value="Public Pages" />
 			<var name="pageName" value="Blogs Page" />
@@ -2371,6 +2381,8 @@
 	</command>
 
 	<command name="ViewBlogsPortletNoGuestRole" priority="4">
+		<property name="portal.acceptance" value="lori" />
+
 		<execute macro="ProductMenu#gotoPortlet">
 			<var name="category" value="Build" />
 			<var name="panel" value="Site Administration" />
