@@ -1396,6 +1396,8 @@
 	</command>
 
 	<command name="RestoreWebContentWithArticleVersions" priority="3">
+		<property name="portal.acceptance" value="lori" />
+		
 		<execute macro="ProductMenu#gotoSite">
 			<var name="site" value="Site Name" />
 		</execute>
