@@ -351,6 +351,7 @@
 
 	<command name="AssertExpired" priority="4">
 		<property name="testray.component.names" value="Web Content Display" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Navigator#gotoPage">
 			<var name="pageName" value="Web Content Display Page" />
