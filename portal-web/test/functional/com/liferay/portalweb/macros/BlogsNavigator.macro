@@ -155,6 +155,8 @@
 		<execute function="AssertTextEquals" locator1="BlogsEntry#TITLE" value1="${entryTitle}" />
 		<execute function="AssertTextEquals" locator1="BlogsEntry#CONTENT" value1="${entryContent}" />
 
+		<execute function="Pause" locator1="5000" />
+
 		<execute function="AssertClick#assertTextClickAt" locator1="BlogsEntry#TITLE_LINK" value1="${entryTitle}" />
 	</command>
 
