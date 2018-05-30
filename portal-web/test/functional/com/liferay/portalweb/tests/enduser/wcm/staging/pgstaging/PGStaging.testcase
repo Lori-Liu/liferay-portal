@@ -518,6 +518,8 @@
 	</command>
 
 	<command name="DeleteDMDocument" priority="4">
+		<property name="portal.acceptance" value="lori" />
+		
 		<execute macro="Navigator#gotoSitePage">
 			<var name="pageName" value="Staging Test Page" />
 			<var name="siteName" value="Site Name" />
@@ -552,6 +554,8 @@
 		</execute>
 
 		<execute macro="DMDocument#enableActionsMenuOnPortlet" />
+
+		<execute function="Refresh" />
 
 		<execute macro="LexiconEntry#changeDisplayStyle">
 			<var name="displayStyle" value="list" />
