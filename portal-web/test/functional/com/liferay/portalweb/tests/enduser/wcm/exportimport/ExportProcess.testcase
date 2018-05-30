@@ -60,6 +60,8 @@
 	</command>
 
 	<command name="ViewExportProcess" priority="3">
+		<property name="portal.acceptance" value="lori" />
+		
 		<execute macro="Navigator#openURL" />
 
 		<execute macro="LAR#configureExportSiteCP">

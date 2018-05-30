@@ -518,6 +518,8 @@
 	</command>
 
 	<command name="DeleteDMDocument" priority="4">
+		<property name="portal.acceptance" value="lori" />
+		
 		<execute macro="Navigator#gotoSitePage">
 			<var name="pageName" value="Staging Test Page" />
 			<var name="siteName" value="Site Name" />
