@@ -70,6 +70,14 @@
 
 		<execute function="AssertTextEquals#assertPartialText" locator1="SitePagesExport#CURRENT_AND_PREVIOUS_STATUS" value1="Successful" />
 
+		<execute macro="Navigator#openURL" />
+
+		<execute macro="ProductMenu#gotoPortlet">
+			<var name="category" value="Publishing" />
+			<var name="panel" value="Site Administration" />
+			<var name="portlet" value="Export" />
+		</execute>
+
 		<execute macro="LAR#viewProcessesInListView" />
 
 		<execute macro="LAR#filterCompletedProcesses" />

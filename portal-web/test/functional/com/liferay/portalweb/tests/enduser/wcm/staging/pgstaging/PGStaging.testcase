@@ -553,6 +553,8 @@
 
 		<execute macro="DMDocument#enableActionsMenuOnPortlet" />
 
+		<execute function="Refresh" />
+
 		<execute macro="LexiconEntry#changeDisplayStyle">
 			<var name="displayStyle" value="list" />
 		</execute>
