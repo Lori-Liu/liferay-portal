@@ -482,6 +482,8 @@
 	</command>
 
 	<command name="addWithStructureCP">
+		<execute function="Pause" locator1="10000" />
+
 		<execute function="Click" locator1="TextInput#TITLE" />
 
 		<execute macro="PortletEntry#inputTitle">
