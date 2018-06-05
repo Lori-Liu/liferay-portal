@@ -943,17 +943,12 @@
 
 				<execute macro="Alert#viewSuccessMessage" />
 			</then>
-			<elseif>
+			<else>
 				<condition function="IsElementPresent" locator1="Checkbox#SELECT_ALL" />
 				<then>
 					<execute function="Click" locator1="Checkbox#SELECT_ALL" />
 
-					<if>
-						<condition function="IsElementPresent" locator1="Button#DEACTIVATE" />
-						<then>
-							<execute function="ClickNoError" locator1="Button#DEACTIVATE" />
-						</then>
-					</if>
+					<execute function="ClickNoError" locator1="Icon#DELETE" />
 
 					<execute function="Confirm" value1="Are you sure you want to deactivate the selected users?" />
 
@@ -963,7 +958,7 @@
 						<var name="key_userScreenName" value="${screenName}" />
 					</execute>
 				</then>
-			</elseif>
+			</else>
 		</if>
 	</command>
 
