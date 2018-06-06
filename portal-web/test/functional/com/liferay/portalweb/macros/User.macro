@@ -944,20 +944,6 @@
 				<execute macro="Alert#viewSuccessMessage" />
 			</then>
 			<elseif>
-				<equals arg1="${deactivateType}" arg2="Deactivate Button" />
-				<then>
-					<var name="key_userScreenName" value="${userScreenName}" />
-
-					<execute macro="PortletEntry#selectAll" />
-
-					<execute function="AssertClickNoError" locator1="Button#DEACTIVATE" value1="Deactivate" />
-
-					<execute function="Confirm" value1="Are you sure you want to deactivate the selected users?" />
-
-					<execute macro="Alert#viewSuccessMessage" />
-				</then>
-			</elseif>
-			<elseif>
 				<condition function="IsElementPresent" locator1="Checkbox#SELECT_ALL" />
 				<then>
 					<execute function="Click" locator1="Checkbox#SELECT_ALL" />
