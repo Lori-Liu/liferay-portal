@@ -1631,6 +1631,7 @@
 
 	<command name="SubscribeBlogsRegRole" priority="5">
 		<property name="portal.acceptance" value="false" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Permissions#setUpRegRoleLoginUserPG">
 			<var name="pageName" value="Blogs Page" />
@@ -2140,6 +2141,8 @@
 	</command>
 
 	<command name="ViewBlogsPermissionsSiteRole" priority="4">
+		<property name="portal.acceptance" value="lori" />
+		
 		<execute macro="Permissions#setUpSiteRoleLoginUserPG">
 			<var name="page" value="Public Pages" />
 			<var name="pageName" value="Blogs Page" />
