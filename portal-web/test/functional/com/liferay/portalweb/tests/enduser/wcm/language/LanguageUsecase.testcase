@@ -251,6 +251,7 @@
 	<command name="MoveCurrentLanguagesToAvailable" priority="4">
 		<property name="test.name.skip.portal.instance" value="LanguageUsecase#MoveCurrentLanguagesToAvailable" />
 		<property name="testray.component.names" value="Localization" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Navigator#gotoSitePage">
 			<var name="pageName" value="Test Page Name" />
@@ -328,6 +329,7 @@
 	<command name="ViewDisplayOptionsViaLanguagePortlet" priority="4">
 		<property name="test.name.skip.portal.instance" value="LanguageUsecase#ViewDisplayOptionsViaLanguagePortlet" />
 		<property name="testray.component.names" value="Localization" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Navigator#gotoSitePage">
 			<var name="pageName" value="Test Page Name" />
@@ -420,6 +422,7 @@
 	<command name="ViewRemovedCurrentPortalLanguagesViaLanguagePortlet" priority="4">
 		<property name="test.name.skip.portal.instance" value="LanguageUsecase#ViewRemovedCurrentPortalLanguagesViaLanguagePortlet" />
 		<property name="testray.component.names" value="Localization" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Navigator#gotoSitePage">
 			<var name="pageName" value="Test Page Name" />
@@ -469,6 +472,7 @@
 	<command name="ViewRemovedCurrentSiteLanguagesViaLanguagePortlet" priority="4">
 		<property name="test.name.skip.portal.instance" value="LanguageUsecase#ViewRemovedCurrentSiteLanguageViaLanguagePortlet" />
 		<property name="testray.component.names" value="Localization" />
+		<property name="portal.acceptance" value="lori" />
 
 		<execute macro="Navigator#gotoSitePage">
 			<var name="pageName" value="Test Page Name" />
