@@ -636,7 +636,7 @@
 	</command>
 
 	<command name="viewChildPageDropdown">
-		<execute function="ClickNoError" locator1="Home#${viewChildPageDropdown}" />
+		<execute function="Click#clickNoMouseOver" locator1="Home#${viewChildPageDropdown}" />
 
 		<if>
 			<isset var="javaScriptPage" />
@@ -644,7 +644,7 @@
 				<execute function="Confirm#waitForConfirmation" value1="${javaScriptPage}" />
 			</then>
 		</if>
-
+		
 		<execute function="MouseOver#mouseOverClickNavigation" locator1="Home#PAGE_2" />
 
 		<var name="key_childPageName" value="${childPageName}" />
