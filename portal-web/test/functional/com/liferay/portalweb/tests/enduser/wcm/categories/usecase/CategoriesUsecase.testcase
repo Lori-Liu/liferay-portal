@@ -1458,6 +1458,8 @@
 
 		<execute macro="LAR#exportSuccess" />
 
+		<execute function="MouseOver" locator1="Portlet#HEADER" />
+
 		<execute macro="LexiconEntry#changeDisplayStyle">
 			<var name="displayStyle" value="table" />
 		</execute>
